@@ -1,0 +1,102 @@
+.millions_section{
+    width: 100%;
+    position: relative;
+    // position: absolute;
+    .bg_image{
+        position: absolute;
+        // position: relative;
+        top: 200px;
+        width: 100%;
+    }
+    .millions_container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+        top: 400px;
+       
+        .part1{
+           @include flexCenter(row,space-between);
+            .paragraph{
+                width: 50%;
+                color: white;
+                font-size: 36px;
+                font-weight: 400;
+                font-family: $roboto_font;
+                p{
+                    width: 40%;
+                    padding-left: 140px;
+                }
+            }
+            .images{
+                width: 50%;
+                
+                img{
+                    margin-top: 50px;
+                    
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: 15px;
+                    font-family: $roboto_font;
+                    font-style: 400;
+                    text-transform: uppercase;
+                    color: $text-grey;
+                }
+            }
+        }
+        .part2{
+            position: absolute;
+            display: flex; 
+            justify-content: space-between;
+            padding-top: 150px;
+            .main_div_margin{
+                padding-top: 120px;
+            }
+            .main_div{
+                width: 30%;
+                height: auto;
+                // background-color: rgb(173, 136, 136);
+                h3{
+                    font-size: 40px;
+                    font-weight: 400;
+                    color: white;
+                    font-family: $roboto_font;
+                }
+                h2{
+                    color: white;
+                    font-family: $roboto_font;
+                    padding-bottom: 10px;
+                    padding-left: 8px;
+                }
+                h2.blue{
+                    border-left: 2px solid #1FCFF1;
+                }
+                h2.yellow {
+                    border-left: 2px solid #FFD512;
+                }
+                h2.purple{
+                    border-left: 2px solid #9945FF;
+                }
+                h2.green{
+                    border-left:2px solid #19FB9B;
+                }
+                p{
+                    color: $text-grey;
+                    font-size: 16px;
+                    line-height: 27px;
+                    font-family: $roboto_font;
+                    padding-bottom: 20px;
+                }
+                .bg-color{
+                    background-color: rgba(0, 0, 0, 0.11);
+                    border-radius: 20px;
+                    margin-top: 10px;
+                }
+            }
+            
+        }
+    }
+}

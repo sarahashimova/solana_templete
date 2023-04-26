@@ -1,0 +1,36 @@
+.slides_images{
+    position: relative;
+    top: 1800px;
+    .container_images {
+        position: relative;
+        top: -390px;
+        width: 80%;
+        margin: auto;
+        height: 200px;
+        background-color: pink;
+        display: flex;
+        .bg_img_absolute{
+            position: absolute;
+            // z-index: -1000;
+            // top: 500px;
+        }
+        div.first{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+        div.second{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            div.second_content{
+                background-color: #19161C;
+                height: 100%;
+            }
+        }
+        div.third{
+            width: 25%;
+        }
+    }
+}

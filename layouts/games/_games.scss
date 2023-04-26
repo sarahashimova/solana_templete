@@ -1,0 +1,87 @@
+.games_section {
+    position: relative;
+    top: 1500px;
+    .game_container{
+        width: 80%;
+        margin: auto;
+        // top: 50%;
+        // left: 50%;  
+        // transform: translate(-50%, -50%);
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            h2{
+                color: white;
+                font-family: $roboto_font;
+                font-size: 39px;
+                font-weight: 400;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                color: white;
+                li{
+                    margin-left: 30px;
+                    background-color: #111111;
+                    border-radius: 15px;
+                    a{
+                        display: inline-block;
+                        padding: 18px;
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 400;
+                        font-family: $roboto_font;
+                    }
+                    &:hover {
+                        border: 1px solid white;
+                    }
+                }
+            }
+        }
+        .images_div{
+            margin-top: 20px;
+            display: flex;
+            div.images{
+                width: 50%;
+                img{
+                    width: 100%;
+                    // height: auto;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
+            }
+            div.content{
+                padding: 60px;
+                width: 50%;
+                background-color: #1A1A1A;
+                border-bottom-right-radius: 12px;
+                border-top-right-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p{
+                    color: white;
+                    margin-top: 18px;
+                    font-size: 21px;
+                    font-family: $roboto_font;
+                    font-weight: 400;
+                }
+                .learn{
+                    color:#A962FF;
+                    font-size: 18px;
+                }
+            }
+        }
+        .logos_div{
+            margin-top: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #261f2666;
+            border-radius: 15px;
+            height: 70px;
+        }
+    }
+}

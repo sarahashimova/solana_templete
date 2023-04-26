@@ -1,0 +1,117 @@
+body{
+    background-color: black;
+    header{
+        .frame{
+            height: 37px;
+            background: linear-gradient(90deg,#00BCD4, #0047FF);
+            font-family: $roboto_font;
+            text-transform: uppercase;
+            font-weight: 400;
+            @include flexCenter(row,center);    
+        }
+       
+        .header_main{
+            position: relative;
+            background-color: black;
+            height: 100vh;
+            .nav_bar {
+                position: absolute;
+                width: 100%;
+                z-index: 100;
+                background-color: black;
+                opacity: 60%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                .container_nav {
+                    width: 80%;
+                    margin: auto;
+                    @include flexCenter(row, space-between);
+                    i{
+                        display: none;
+                        color: white;
+                        position: absolute;
+                        z-index: 300;
+                        right: 20px
+                    }
+                    nav{
+                        ul{
+                            @include flexCenter(row,space-between);
+                            list-style: none;
+                            li{
+                                padding-left: 30px;
+                                a{
+                                    text-decoration: none;
+                                    color: $grey;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bg_img_left, .bg_img_right {
+                position: absolute;
+            }
+            .bg_img_left{
+                left: 0;
+            }
+            .bg_img_right {
+                right: 0;
+            }
+            .header_content {
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                color: white;
+                h1{
+                    font-size: 60px;
+                    font-family: $roboto_font;
+                    font-weight: 400;
+    
+                }
+                p{
+                    margin-top: 55px;
+                    font-size: 21px;
+                    font-family: $roboto_font;
+                }
+                .buttons {
+                    @include flexCenter(row,center);
+                    margin-top: 44px;
+                    a.left{
+                        display: inline-block;
+                        background:linear-gradient(to right, #8C01FA,black);
+                        width: 181px;
+                        height: 52px;
+                        border-radius: 36px;
+                        text-decoration: none;
+                        color: white;
+                        font-family: $roboto_font;
+                        font-size: 15px;
+                        margin-top: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    a.right{
+                        display: inline-block;
+                        width: 181px;
+                        height: 52px;
+                        background-color: black;
+                        color: white;
+                        border: 1px solid white;
+                        text-decoration: none;
+                        font-family: $roboto_font;
+                        font-size: 15px;
+                       display: flex;
+                       justify-content: center;
+                       margin-top: 16px;    
+                       align-items: center;
+                       border-radius: 36px;
+                    }
+                }
+            }
+    
+        }
+    }
+}

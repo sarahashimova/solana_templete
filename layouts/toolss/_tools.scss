@@ -1,0 +1,22 @@
+.tools_section{
+    width: 100%;
+    // position: absolute;
+    position: relative;
+    z-index: 300;
+    
+    .container_tools{
+        width: 80%;
+        margin: auto;
+        p{
+            color: $blue;
+            font-size: 18px;
+            text-align: center;
+            font-family: $roboto_font;
+            
+        }
+        .tools{
+            @include flexCenter(row,space-between);
+            margin-top: 36px;
+        }
+    }
+}
